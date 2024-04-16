@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <body style="background-color: black;">
+            <pre>
+                <code style="color:white">
+                    <code style="font-size: larger;"> 
+                        What is MySQL?
+                        SQL, or Structured Query Language, is a powerful programming language designed for managing and manipulating relational databases. Developed in the 1970s, SQL has become the standard language for interacting with databases, providing a standardized way to perform tasks such as querying data, updating records, and defining database structures.
+                        Key Concepts of SQL:
+                        Data Definition Language (DDL):
+                        DDL commands enable users to define and manage the structure of a database. This includes creating and altering database objects such as tables, indexes, and constraints.
+                        Data Manipulation Language (DML):
+                        SQL includes commands for querying and modifying data within a database. Common DML commands include SELECT (retrieve data), INSERT (add new records), UPDATE (modify existing records), and DELETE (remove records).
+                        Control Language (DCL):
+                        DCL commands govern access to the database. They include commands such as GRANT (assign privileges) and REVOKE (remove privileges), which control who can access and manipulate data within the database.
+                        What are the characteristics of SQL?
+                        SQL may be utilized by quite a number of users, which include people with very little programming experience. SQL is a non-procedural language. We can without difficulty create and replace databases in SQL. It isn’t a time-consuming process. SQL is primarily based totally on ANSI standards. SQL does now no longer have a continuation individual. SQL is entered into the SQL buffer on one or more lines. SQL makes use of a termination individual to execute instructions immediately. It makes use of features to carry out a few formatting. It uses functions to perform some formatting.
+                        Uses of SQL
+                        Data definition: It is used to define the structure and organization of the stored data and the relationships among the stored data items. Data retrieval: SQL can also be used for data retrieval. Data manipulation: If the user wants to add new data, remove data, or modifying in existing data then SQL provides this facility also. Access control: SQL can be used to restrict a user’s ability to retrieve, add, and modify data, protecting stored data against unauthorized access. Data sharing: SQL is used to coordinate data sharing by concurrent users, ensuring that changes made by one user do not inadvertently wipe out changes made at nearly the same time by another user. SQL also differs from other computer languages because it describes what the user wants the computer to do rather than how the computer should do it. (In more technical terms, SQL is a declarative or descriptive language rather than a procedural one.) SQL contains no IF statement for testing conditions, and no GOTO, DO, or FOR statements for program flow control. Rather, SQL statements describe how a collection of data is to be organized, or what data is to be retrieved or added to the database. The sequence of steps to do those tasks is left for the DBMS to determine.
+                        SQL Rules
+                        A ‘;’ is used to end SQL statements. Statements may be split across lines, but keywords may not. Identifiers, operator names, and literals are separated by one or more spaces or other delimiters. A comma (,) separates parameters without a clause. A space separates a clause. Reserved words cannot be used as identifiers unless enclosed with double quotes. Identifiers can contain up to 30 characters. Identifiers must start with an alphabetic character. Characters and date literals must be enclosed within single quotes. Numeric literals can be represented by simple values. Comments may be enclosed between /* and */ symbols and maybe multi-line.
+                        Why SQL?
+                        SQL is an interactive question language. Users type SQL instructions into an interactive SQL software to retrieve facts and show them on the screen, presenting a convenient, easy-to-use device for ad hoc database queries. SQL is a database programming language. Programmers embed SQL instructions into their utility packages to access the facts in a database. Both user-written packages and database software packages (consisting of document writers and facts access tools) use this approach for database access. SQL is a client/server language. Personal computer programs use SQL to communicate over a network with database servers that save shared facts. This client/server architecture is utilized by many famous enterprise-class applications. SQL is Internet facts access language. Internet net servers that interact with company facts and Internet utility servers all use SQL as a widespread language for getting access to company databases, frequently through embedding SQL databases get entry to inside famous scripting languages like PHP or Perl. SQL is a distributed database language. Distributed database control structures use SQL to assist distribute facts throughout many linked pc structures. The DBMS software program on every gadget makes use of SQL to speak with the opposite structures, sending requests for facts to get entry to. SQL is a database gateway language. In a pc community with a mixture of various DBMS products, SQL is frequently utilized in a gateway that lets one logo of DBMS speak with every other logo. SQL has for this reason emerged as a useful, effective device for linking people, pc packages, and pc structures to the facts saved in a relational database.
+                        Data Type
+                        The data type, as described below, must be a system data type or a user-defined data type. Many of the data types have a size such as CHAR(35) or Numeric(8,2).
+                        Bit –Integer data with either a 1 or 0 value
+                        Int –Integer (whole number) data from -2^31 (-2,147,483,648) through 2^31 – 1 (2,147,483,647)
+                        Smallint –Integer data from 2^15 (-32,768) through 2^15 – 1 (32,767)
+                        Tinyint –Integer data from 0 through 255
+                        Decimal –Fixed precision and scale numeric data from -10^38 -1 through 10^38
+                        Numeric –A synonym for decimal
+                        Timestamp –A database-wide unique number
+                        Uniqueidentifier –A globally unique identifier (GUID)
+                        Money – Monetary data values from -2^63 (-922,337,203,685,477.5808) through 2^63 – 1 (+922,337,203,685,477.
+                        5807), with accuracy to one-ten-thousandth of a monetary unit Smallmoney –Monetary data values from -214,748.3648 through +214,748.3647, with accuracy to one-ten-thousandth of a monetary unit
+                        Float –Floating precision number data from -1.79E + 308 through 1.79E + 308
+                        Real –Floating precision number data from -3.40E + 38 through 3.40E + 38
+                        Datetime –Date and time data from January 1, 1753, to December 31, 9999, with an accuracy of one-three-hundredths of a second, or 3.33 milliseconds
+                        Smalldatetime –Date and time data from January 1, 1900, through June 6, 2079, with an accuracy of one minute
+                        Char –Fixed-length non-Unicode character data with a maximum length of 8,000 characters
+                        Varchar –Variable-length non-Unicode data with a maximum of 8,000 characters
+                        Text –Variable-length non-Unicode data with a maximum length of 2^31 – 1 (2,147,483,647) characters
+                        Binary –Fixed-length binary data with a maximum length of 8,000 bytes
+                        Varbinary –Variable-length binary data with a maximum length of 8,000 bytes
+                        Image – Variable-length binary data with a maximum length of 2^31 – 1 (2,147,483,647) bytes
+                        What are SQL commands?
+                        Developers use structured query language (SQL) commands, which are specific keywords or SQL statements, to work with data stored in relational databases. The following are categories for SQL commands.
+                        1. Data Definition Language (DDL)
+                        DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.
+                        All the command of DDL are auto-committed that means it permanently save all the changes in the database.
+                        Here are some commands that come under DDL:
+                        CREATE
+                        ALTER
+                        DROP
+                        TRUNCATE
+                        a. CREATE It is used to create a new table in the database. Syntax: CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]);
+                        Example:
+                        CREATE TABLE EMPLOYEE(Name VARCHAR2(20), Email VARCHAR2(100), DOB DATE);
+                        b. DROP: It is used to delete both the structure and record stored in the table.
+                        Syntax
+                        DROP TABLE table_name;
+                        Example
+                        DROP TABLE EMPLOYEE;
+                        c. ALTER: It is used to alter the structure of the database. This change could be either to modify the
+                        characteristics of an existing attribute or probably to add a new attribute.
+                        Syntax:
+                        To add a new column in the table
+                        ALTER TABLE table_name ADD column_name COLUMN-definition;
+                        To modify existing column in the table:
+                        ALTER TABLE table_name MODIFY(column_definitions....);
+                        EXAMPLE
+                        ALTER TABLE STU_DETAILS ADD(ADDRESS VARCHAR2(20));
+                        ALTER TABLE STU_DETAILS MODIFY (NAME VARCHAR2(20));
+                        d. TRUNCATE: It is used to delete all the rows from the table and free the space containing the table.
+                        Syntax:
+                        TRUNCATE TABLE table_name;
+                        Example:
+                        TRUNCATE TABLE EMPLOYEE;
+                        2. Data Manipulation Language
+                        DML commands are used to modify the database. It is responsible for all form of changes in the database.
+                        The command of DML is not auto-committed that means it can't permanently save all the changes in the database.
+                        They can be rollback.
+                        Here are some commands that come under DML:
+                        INSERT
+                        UPDATE
+                        DELETE
+                        a. INSERT: The INSERT statement is a SQL query. It is used to insert data into the row of a table.
+                        Syntax:
+                        INSERT INTO TABLE_NAME
+                        (col1, col2, col3,.... col N)
+                        VALUES (value1, value2, value3, .... valueN);
+                        Or INSERT INTO TABLE_NAME
+                        VALUES (value1, value2, value3, .... valueN);
+                        For example:
+                        INSERT INTO javatpoint (Author, Subject) VALUES ("Sonoo", "DBMS");
+                        b. UPDATE: This command is used to update or modify the value of a column in the table.
+                        Syntax:
+                        UPDATE table_name SET [column_name1= value1,...column_nameN = valueN] [WHERE CONDITION]
+                        For example:
+                        UPDATE students
+                        SET User_Name = 'Sonoo'
+                        WHERE Student_Id = '3'
+                        c. DELETE: It is used to remove one or more row from a table.
+                        Syntax:
+                        DELETE FROM table_name [WHERE condition];
+                        For example:
+                        DELETE FROM javatpoint
+                        WHERE Author="Sonoo";
+                        3. Data Control Language
+                        DCL commands are used to grant and take back authority from any database user.
+                        
+                        Here are some commands that come under DCL:
+                        Grant
+                        
+                        Revoke
+                        a. Grant: It is used to give user access privileges to a database.
+                        
+                        Example
+                        GRANT SELECT, UPDATE ON MY_TABLE TO SOME_USER, ANOTHER_USER;
+                        b. Revoke: It is used to take back permissions from the user.
+                        Example
+                        REVOKE SELECT, UPDATE ON MY_TABLE FROM USER1, USER2;
+                        4. Transaction Control Language
+                        
+                        TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only.
+                        These operations are automatically committed in the database that's why they cannot be used while creating
+                        tables or dropping them. Here are some commands that come under TCL:
+                        COMMIT
+                        ROLLBACK
+                        SAVEPOINT
+                        a. Commit: Commit command is used to save all the transactions to the database.
+                        Syntax:
+                        COMMIT;
+                        Example:
+                        DELETE FROM CUSTOMERS
+                        WHERE AGE = 25;
+                        COMMIT;
+                        b. Rollback: Rollback command is used to undo transactions that have not already been saved to the database.
+                        Syntax:
+                        ROLLBACK;
+                        Example:
+                        DELETE FROM CUSTOMERS
+                        WHERE AGE = 25;
+                        ROLLBACK;
+                        c. SAVEPOINT: It is used to roll the transaction back to a certain point without rolling back the entire
+                        transaction.
+                        Syntax:
+                        SAVEPOINT SAVEPOINT_NAME;
+                        5. Data Query Language
+                        DQL is used to fetch the data from the database.
+                        It uses only one command:
+                        SELECT
+                        a. SELECT: This is the same as the projection operation of relational algebra. It is used to select the attribute based on the condition described by WHERE clause.
+                        Syntax:
+                        SELECT expressions
+                        FROM TABLES
+                        WHERE conditions;
+                        For example:
+                        SELECT emp_name
+                        FROM employee
+                        WHERE age > 20;
+                        Creating tables
+                        CREATE TABLE table_name (
+                        column1 datatype,
+                        column2 datatype,
+                        column3 datatype,
+                        ....
+                        );
+                        CREATE TABLE Persons (
+                        PersonID int,
+                        LastName varchar(255),
+                        FirstName varchar(255),
+                        Address varchar(255),
+                        City varchar(255)
+                        );
+                        Create Table Using Another Table
+                        CREATE TABLE new_table_name AS,
+                        SELECT column1, column2,...,
+                        FROM existing_table_name,
+                        WHERE ....;,
+                        Example,
+                        CREATE TABLE TestTable AS,
+                        SELECT customername, contactname,
+                        FROM customers;,
+                        The SQL INSERT value INTO Table
+                        INSERT INTO table_name (column1, column2, column3, ...)
+                        VALUES (value1, value2, value3, ...);
+                        2. If you are adding values for all the columns of the table, you do not need to specify
+                        the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table.
+                        Here, the INSERT INTO syntax would be as follows:
+                        INSERT INTO table_name
+                        VALUES (value1, value2, value3, ...);
+                        Example
+                        INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+                        VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+                        Updating Columm of the Table
+                        UPDATE table_name SET column1 = value1, column2 = value2,…
+                        Example
+                        UPDATE Customer SET CustomerName = 'Satyam',
+                        Country = 'USA' WHERE CustomerID = 1;
+                        Deleting Rows from Table
+                        DELETE Syntax
+                        DELETE FROM table_name WHERE condition;
+                        Example
+                        DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+                        Dropping a Columm
+                        ALTER TABLE table_name
+                        DROP COLUMN column_name;
+                        ALTER TABLE Users DROP Column City;
+                        Conditional Retrieval of Rows
+                        SELECT * FROM employees WHERE age > 30;
+                        Working with null Values
+                        SELECT Fname, Lname FROM Employee WHERE SSN IS NULL;
+                        Matching pattern in sql
+                        SELECT ColumnName1, ColumnName2 FROM TableName WHERE ColumnName LIKE [Expression];
+                        mysql> SELECT * FROM employee_details WHERE Name LIKE 'Pr%';
+                        mysql> SELECT * FROM employee_details WHERE Name LIKE '%ya%';
+                        mysql> SELECT * FROM employee_details WHERE City LIKE '%i';
+                        Order By
+                        SELECT * FROM plant ORDER BY id;
+                        SELECT * FROM plant ORDER BY fruit DESC;
+                        Commit
+                        SELECT *
+                        FROM Staff
+                        WHERE Allowance = 400;
+                        sql> COMMIT;
+                        ROLLBACK
+                        sql>
+                        SELECT *
+                        FROM EMPLOYEES
+                        WHERE ALLOWANCE = 400;
+                        sql> ROLLBACK;
+                        Character function in SQL
+                        lower() The SQL LOWER() function is used to convert all characters of a string to lower case.
+                        upper() The SQL UPPER() function is used to convert all characters of a string to uppercase.
+                        trim() The SQL TRIM() removes leading and trailing characters(or both) from a character string.
+                        translate() The SQL TRANSLATE() function replaces a sequence of characters in a string with another sequence of
+                        characters. The function replaces a single character at a time.
+                        Date function
+                        @@DATEFIRST
+                        This function is used to retrieve the first day of the week which is set by the SET DATEFIRST function.
+                        2 CURRENT_TIMESTAMP
+                        Is used to retrieve the current date and time.
+                        3 CURRENT_TIMEZONE()
+                        This function is used to retrieve the current time zone offset from Coordinated Universal Time (UTC).
+                        4 CURRENT_TIMEZONE_ID()
+                        Is used to retrieve the current time zone ID observed by a server or an instance.
+                        5 DATE_BUCKET()
+                        Is used to group data into groups that correspond to fixed periods of time.
+                        Sql Group Function
+                        SQL COUNT (): This function returns the number of rows in the table that satisfies the condition specified in the WHERE condition.
+                        If the WHERE condition is not specified, then the query returns the total number of rows in the table.
+                        For Example: If you want the number of employees in a particular department, the query would be:
+                        SELECT COUNT (*) FROM employee
+                        WHERE dept = 'Electronics';
+                        The output would be '2' rows.
+                        If you want the total number of employees in all the department, the query would take the form:
+                        SELECT COUNT (*) FROM employee;
+                        The output would be '5' rows.
+                        SQL DISTINCT(): This function is used to select the distinct rows.
+                        For Example: If you want to select all distinct department names from employee table, the query would be:
+                        SELECT DISTINCT dept FROM employee;
+                        To get the count of employees with unique name, the query would be:
+                        SELECT COUNT (DISTINCT name) FROM employee;
+                        SQL MAX(): This function is used to get the maximum value from a column.
+                        To get the maximum salary drawn by an employee, the query would be:
+                        SELECT MAX (salary) FROM employee;
+                        SQL MIN(): This function is used to get the minimum value from a column.
+                        To get the minimum salary drawn by an employee, he query would be:
+                        SELECT MIN (salary) FROM employee;
+                        SQL AVG(): This function is used to get the average value of a numeric column.
+                        To get the average salary, the query would be
+                        SELECT AVG (salary) FROM employee;
+                        SQL SUM(): This function is used to get the sum of a numeric column
+                        To get the total salary given out to the employees,
+                        SELECT SUM (salary) FROM employee;
+                        Subqueries
+                        Exploring subqueries and their applications in SQL.
+                        
+                        Indexes
+                        Understanding indexes and their impact on query performance.
+                        
+                        Transactions
+                        Understanding ACID properties and transaction management in SQL.
+                </code>
+                </code>
+            </pre>
+                     
+        </code>
+    </pre>
+</body>
+</html>

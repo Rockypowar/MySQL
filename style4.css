@@ -1,0 +1,57 @@
+/* Add this CSS to style.css */
+
+/* Style the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown links */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown links (list items) */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Highlight the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* .title-div{
+    background-color: rgb(169, 207, 207);
+} */
+
+
+.center-title{
+    text-align: center;
+}
+
+.topic-pic{
+    height:200px;
+    width:330px;
+}
+
+.topic-link{
+    text-decoration: none;
+    color: rgb(243, 240, 240);
+}
+
+body{
+    background-image: url('iamge/12.jpg');
+}

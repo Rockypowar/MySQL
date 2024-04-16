@@ -1,0 +1,37 @@
+/*Iframes*/
+.box{
+    float: left;
+}
+iframe{
+    height: 500px;
+    width: 575px;
+}
+.iframe-left{
+    width:300px;
+
+}
+.iframe-right{
+    width: 870px;
+}
+/* .title-div{
+    background-color: rgb(169, 207, 207);
+} */
+
+
+.center-title{
+    text-align: center;
+}
+
+.topic-pic{
+    height:200px;
+    width:330px;
+}
+
+.topic-link{
+    text-decoration: none;
+    color: rgb(243, 240, 240);
+}
+
+body{
+    background-image: url('iamge/12.jpg');
+}
